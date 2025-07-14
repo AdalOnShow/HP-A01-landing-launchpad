@@ -260,3 +260,63 @@ body {
     border-radius: 48px;
   }
 }
+
+#contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 70px 0 85px 0;
+  gap: 110px;
+
+  h1 {
+    flex: 1;
+    font-size: 97px;
+    font-weight: bold;
+    color: black;
+  }
+
+
+  .contact-form {
+    flex: 1;
+    padding: 20px;
+
+    label {
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 20px 30px;
+      border: 2px solid var(--dark-color);
+      border-radius: 10px;
+      margin-bottom: 18px;
+      font-family: "Inter", sans-serif;
+      font-size: 20px;
+      background-color: #ffffff;
+      transition: border-color 0.3s ease;
+
+      &:focus,
+      &:focus {
+        border-color: var(--primary-color);
+        outline: none;
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 140px;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 19px !important;
+  }
+}
