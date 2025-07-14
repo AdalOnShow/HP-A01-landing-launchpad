@@ -261,6 +261,7 @@ body {
   }
 }
 
+/* contact section */
 #contact-section {
   display: flex;
   justify-content: space-between;
@@ -318,5 +319,43 @@ body {
   button {
     width: 100%;
     padding: 19px !important;
+  }
+}
+
+/* footer section */
+footer {
+  text-align: center;
+  padding: 100px 20px;
+
+  .footer-logo {
+    font-size: 100px;
+    font-weight: 900;
+    font-family: "Inter", sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+
+  .footer-text {
+    max-width: 530px;
+    font-size: 18px;
+    color: #8987A1;
+    margin: 0 auto 15px auto;
+    max-width: 600px;
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    a {
+      font-size: 18px;
+      color: #8987A1;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
   }
 }
